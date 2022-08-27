@@ -8,8 +8,8 @@ import random
 import time
 
 def get_currentdate():
-  return time.strftime('%Y{}%m{}%d{} %H{}%M{}%S{}',
-time.localtime()).format("年","月","日","时","分","秒")
+  return time.strftime('%Y{}%m{}%d{}',
+time.localtime()).format("年","月","日")
 
 today = datetime.now()
 start_date = os.environ['START_DATE']
